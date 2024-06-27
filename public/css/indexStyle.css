@@ -1,0 +1,582 @@
+@font-face {
+    font-family: 'IronFont';
+    src: url('../fonts/Metal Mania.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scrollbar-width: thin;
+}
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    /* Fallback background color */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: padding 0.3s ease;
+    /* Ajoute une transition fluide */
+    background-image: url('../images/headerBar.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.site-header.header-collapsed {
+    padding: 40px 20px;
+    padding-left: 60px;
+    /* Réduit le padding lorsque le header est collapsé */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'IronFont', Arial, sans-serif;
+    color: #9e0000;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'IronFont', Arial, sans-serif;
+    font-size: 2em;
+    color: #9e0000;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+main {
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.News {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 1100px;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    background-image: url('../images/Blackground.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.Logo {
+    position: absolute;
+    top: 1030px;
+    left: 50%;
+    width: 200px;
+    height: auto;
+    max-width: 50%;
+    z-index: 0;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.NewAlbum {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.News h2 {
+    width: 100%;
+}
+
+.News .Track {
+    flex: 0 0 auto;
+    max-width: 300px;
+    /* Ajustez cette valeur en fonction de vos besoins */
+}
+
+.News .Track img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.News .songsTitles {
+    text-align: left;
+    max-width: 300px;
+    /* Ajustez cette valeur en fonction de vos besoins */
+}
+
+.News .songsTitles ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.News .songsTitles li {
+    margin-bottom: 10px;
+}
+
+.Music {
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.Music h3 {
+    padding-bottom: 30px;
+}
+
+.Music audio {
+    width: 100%;
+}
+
+.Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: 300px;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    background-image: url('../images/Blackground.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#Tour .Destinations {
+    margin-top: 100px;
+    text-align: center;
+    width: 80%;
+    text-align: justify;
+}
+
+#Tour .Destinations p {
+    /*white-space: pre-line;*/
+}
+
+.Collector {
+    padding-top: 100px;
+    width: 50%;
+    text-align: center;
+}
+
+.Collector img {
+    width: 100%;
+}
+
+.Collector p {
+    text-align: left;
+}
+
+#Merch h2 {}
+
+.Shop {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    width: 90%;
+    height: 100%;
+    padding-top: 100px;
+    /*
+overflow-x: scroll;
+overflow-y: hidden;
+*/
+    overflow-x: auto;
+    line-height: normal;
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 #1e1e1e;
+}
+
+.Shop>div {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 423px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+
+.Shop>div>p {
+    font-weight: bold;
+}
+
+.Shop img {
+    max-width: 100%;
+}
+
+.Shop button {
+    width: 100%;
+    height: 70px;
+    background-color: #9e0000;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'IronFont', Arial, sans-serif;
+    font-size: 2em;
+}
+
+.Shop button:hover {
+    color: #ff0000;
+    background-color: #000;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 50px 0px;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries pour la responsivité */
+@media only screen and (min-width: 768px) {
+    .NewAlbum {
+        width: auto;
+    }
+
+    .News .Track {
+        margin-right: 30px;
+        max-width: 450px;
+    }
+
+    .News .songsTitles {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Shop {
+        gap: 40px;
+    }
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: #9e0000;
+    /* Add a dark-grey background on hover */
+}
+
+#Cart {
+    position: fixed;
+    top: 160px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #9e0000;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    transition: padding-top 0.3s ease, top 0.3s ease;
+}
+
+#Cart img {
+    width: 50%;
+}
+
+#Cart:hover {
+    background-color: #ff0000;
+}
+
+
+/* Popup ACHAT */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+    /*background-color: #fff;*/
+    /*background-image: url('../images/Blackground.png');*/
+    background-image: url('../images/Blackground.png'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    background-blend-mode: overlay;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 10x rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.popup-content img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.product-details {
+    margin: 20px 0;
+}
+
+.product-details h3 {
+    font-size: 2.5em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.product-details p {
+    font-size: 1em;
+    margin: 50px 0;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+#purchase-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#purchase-form label,
+#purchase-form input,
+#purchase-form select,
+#purchase-form button {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+}
+
+#purchase-form label {
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+#purchase-form input,
+#purchase-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#purchase-form button {
+    background-color: #9e0000;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#purchase-form button:hover {
+    background-color: #000;
+    color: #ff0000;
+}
+
+/* POP PANIER */
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cart-popup-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    border-radius: 8px;
+}
+
+.cart-popup-content .close-cart {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-popup-content .close-cart:hover,
+.cart-popup-content .close-cart:focus {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.cart-items {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+
+}
+
+.cart-items>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-image: url('../images/Blackground.png');
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.remove-item {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ff0000;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    padding-left: 60px;
+}
+
+#itemImg {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#itemInfos {
+    color: white;
+    text-align: left;
+}
+
+.cart-summary {
+    margin: 20px 0;
+}
+
+.cart-summary p {
+    font-size: 1.2em;
+}
+
+.checkout-button {
+    background-color: #9e0000;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.checkout-button:hover {
+    background-color: #000;
+    color: #ff0000;
+}

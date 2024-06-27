@@ -1,0 +1,13 @@
+-- Insérer les articles avec leurs détails dans la table produits
+INSERT INTO produits (nom, description, prix, image, inStock)
+VALUES ('Cap Gravedigger', '', 24.99, '../images/blackCap2.jpeg', 10),
+       ('Cap Meitlan Tour 2023.', '', 49.99, '../images/blackCapMeitlan.jpeg', 5),
+       ('Vinyl Electric Shadows', '', 34.99, '../images/SteelAliveVinyle.png', 15),
+       ('Vinyl Metal Nation', '', 34.99, '../images/MetalNationVinyle.png', 8),
+       ('Electric Shadows Album', '', 19.99, '../images/AlbumES.jpg', 20),
+       ('ES. Collector steelbook', '', 29.99, '../images/Collector.png', 3),
+       ('T-Shirt Rock Nation 2023', '', 29.99, '../images/blackT-shirt.jpeg', 12),
+       ('Faux leather jacket Orignal IE.', '', 69.99, '../images/leatherJacket.jpeg', 7),
+       ('T-Shirt Steel Alive', '', 29.99, '../images/t-shirtBand.jpeg', 9),
+       ('T-Shirt Iron Nation', '', 29.99, '../images/t-shirtCity.jpeg', 6),
+       ('T-Shirt Necchichi', '', 19.99, '../images/t-shirtNecchichi.jpeg', 18);

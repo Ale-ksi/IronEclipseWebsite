@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Eclipse - website</title>
+    <link rel="stylesheet" href="./css/indexStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="images/VideoIronEclipse.mp4" type="video/mp4">
+            Your browser does not support the video tag. :/
+        </video>
+    </div>
+    <header class="site-header">
+        <h1>IRON ECLIPSE</h1>
+        <nav>
+            <ul>
+                <li><a href="#News">News</a></li>
+                <li><a href="#Tour">Tour</a></li>
+                <li><a href="#Merch">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <button id="Cart" title="Cart">
+            <img src="images/cart.png">
+        </button>
+        <img class="Logo" src="images/IronEclipseLogo.png">
+        <section id="News" class="News">
+            <h2>NEWS</h2>
+            <div class="NewAlbum">
+                <div class="Track">
+                    <img src="images/albumImage.png">
+                </div>
+                <div class="songsTitles">
+                    <ul>
+                        <li>1 - Electric Shadows</li>
+                        <li>2 - Lacether</li>
+                        <li>3 - Steel Alive</li>
+                        <li>4 - I Was Loved for Makin’ You</li>
+                        <li>5 - Starlight Revolver</li>
+                        <li>6 - Sky away the hell</li>
+                        <li>7 - Nothing Else Better</li>
+                        <li>8 - Sleaze Queen Symphony</li>
+                        <li>9 - Lilith's Horns</li>
+                        <li>10 - Iron Love and Wings</li>
+                        <li>11 - Riot in Paradise</li>
+                        <li>12 - Black on Back</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Music">
+                <h3>Listen Electric Shadows Live Version OUT NOW</h3>
+                <p>Electric Shadows is the first track of new Album. Here is the first Live Version from EvilFest 2024
+                    NYC</p>
+                <audio controls>
+                    <source src="music/Electric Shadows.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element :().
+                </audio>
+            </div>
+        </section>
+
+        <section id="Tour" class="Section">
+            <h2>TOUR</h2>
+            <div class="Destinations">
+                <p>
+                    10 juillet 2024 - Sunset Arena, Los Angeles, CA •
+                    15 juillet 2024 - Rock City Stadium, New York, NY •
+                    20 juillet 2024 - Thunder Dome, Chicago, IL •
+                    25 juillet 2024 - Starlight Pavilion, Miami, FL •
+                    1 août 2024 - Steel City Arena, Pittsburgh, PA •
+                    5 août 2024 - Phoenix Arena, Phoenix, AZ •
+                    10 août 2024 - Emerald Arena, Seattle, WA •
+                    15 août 2024 - Bayfront Hall, San Francisco, CA •
+                    20 août 2024 - Red Rock Amphitheater, Denver, CO •
+                    25 août 2024 - Royal Arena, Toronto, ON •
+                    1 septembre 2024 - Echoes Pavilion, Vancouver, BC •
+                    5 septembre 2024 - Moonlight Gardens, Dallas, TX
+                </p>
+            </div>
+            <div class="Collector">
+                <h3>Album Collector Edition</h3>
+                <img src="images/Collector.png">
+                <p>Get the exclusive Collector's Edition of our latest album! This special release is limited and comes
+                    with a host of perks. Each album is personally signed by the band. Along with the signed CD, you'll
+                    receive an exclusive poster. This edition is designed for our ultimate fan, offering a unique piece
+                    of memorabilia with lives tracks. Don't miss out on this chance to own a piece of our band history
+                    with concert's backstages short film.</p>
+            </div>
+        </section>
+
+        <section id="Merch" class="Section">
+            <h2>MERCH</h2>
+            <div class="Shop">
+                <div data-id="1" data-stock="18">
+                    <p>Cap Iron Eclipse 2024</p>
+                    <img src="images/blackCap1.jpeg">
+                    <p>19.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="2" data-stock="10">
+                    <p>Cap Gravedigger</p>
+                    <img src="images/blackCap2.jpeg">
+                    <p>24.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="3" data-stock="5">
+                    <p>Cap Meitlan Tour 2023.</p>
+                    <img src="images/blackCapMeitlan.jpeg">
+                    <p>49.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="4" data-stock="12">
+                    <p>Vinyl Electric Shadows</p>
+                    <img src="images/SteelAliveVinyle.png">
+                    <p>34.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="5" data-stock="7">
+                    <p>Vinyl Metal Nation</p>
+                    <img src="images/MetalNationVinyle.png">
+                    <p>34.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="6" data-stock="15">
+                    <p>Electric Shadows Album</p>
+                    <img src="images/AlbumES.jpg">
+                    <p>19.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="7" data-stock="10">
+                    <p>ES. Collector steelbook</p>
+                    <img src="images/Collector.png">
+                    <p>29.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="8" data-stock="20">
+                    <p>T-Shirt Rock Nation 2023</p>
+                    <img src="images/blackT-shirt.jpeg">
+                    <p>29.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="9" data-stock="8">
+                    <p>Faux leather jacket Orignal IE.</p>
+                    <img src="images/leatherJacket.jpeg">
+                    <p>69.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="10" data-stock="25">
+                    <p>T-shirt Steel Alive</p>
+                    <img src="images/t-shirtBand.jpeg">
+                    <p>29.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="11" data-stock="18">
+                    <p>T-shirt Iron Nation</p>
+                    <img src="images/t-shirtCity.jpeg">
+                    <p>29.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+                <div data-id="12" data-stock="22">
+                    <p>T-shirt Necchichi</p>
+                    <img src="images/t-shirtNecchichi.jpeg">
+                    <p>19.99$</p>
+                    <button class="buy-button">BUY</button>
+                </div>
+            </div>
+        </section>
+
+        <button id="backToTopBtn" title="Go to top">Return to Top</button>
+    </main>
+
+    <footer>
+        <p>2024 Iron Eclipse Band - MATILE Alexis</p>
+    </footer>
+
+    <!-- Popup Achat -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Acheter un produit</h2>
+            <div class="product-details">
+                <h3 id="product-name">Nom du produit</h3>
+                <p id="product-description">Description du produit ici.</p>
+                <p id="product-price">Prix: $XX.XX</p>
+                <p id="stock-status"></p>
+                <form id="purchase-form">
+                    <label for="quantity">Quantité:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                    <label for="size">Taille:</label>
+                    <select id="size" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+
+                    <button type="submit">Ajouter au panier</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <span class="close-cart">&times;</span>
+            <h2>Votre Panier</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <p id="cart-total-items">Total des articles : 0</p>
+                <p id="cart-total-price">Prix total : $0.00</p>
+            </div>
+            <button id="checkout-button" class="checkout-button">Valider le panier</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
